@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "description": "Server for the cancicate project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Dor Mesica <dormesica10@gmail.com>",
+  "license": "Apache-2.0"
+}
