@@ -1,22 +1,26 @@
 {
-  "name": "candidate",
-  "version": "0.0.0",
-  "description": "A cancidacy manager written in React and NodeJS",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dormesica/candidate.git"
-  },
-  "author": "Dor Mesica <dormesica10@gmail.com>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/dormesica/candidate/issues"
-  },
-  "homepage": "https://github.com/dormesica/candidate#readme",
-  "devDependencies": {
-    "lerna": "^3.10.7"
-  }
+    "name": "candidate",
+    "version": "0.0.0",
+    "private": true,
+    "description": "A cancidacy manager written in React and NodeJS",
+    "main": "index.js",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dormesica/candidate.git"
+    },
+    "author": "Dor Mesica <dormesica10@gmail.com>",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/dormesica/candidate/issues"
+    },
+    "homepage": "https://github.com/dormesica/candidate#readme",
+    "devDependencies": {
+        "lerna": "^3.10.7"
+    }
 }
