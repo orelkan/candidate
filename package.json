@@ -3,7 +3,6 @@
     "version": "0.0.0",
     "private": true,
     "description": "A cancidacy manager written in React and NodeJS",
-    "main": "index.js",
     "workspaces": [
         "packages/*"
     ],
