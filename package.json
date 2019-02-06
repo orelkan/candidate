@@ -4,8 +4,7 @@
     "private": true,
     "description": "A cancidacy manager written in React and NodeJS",
     "workspaces": [
-        "client",
-        "server"
+        "packages/*"
     ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
