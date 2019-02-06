@@ -1,7 +1,6 @@
 const Hapi = require('hapi');
 
 const server = Hapi.server({
-    host: 'localhost',
     port: 80 || process.env.PORT,
 });
 
@@ -16,5 +15,4 @@ async function start() {
         process.exit(1);
     }
 }
-
 start();
