@@ -6,16 +6,9 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "react",
-        "react-hooks"
-    ],
     "rules": {
         "indent": [
             "error",
@@ -32,7 +25,6 @@
         "semi": [
             "error",
             "always"
-        ],
-        "react-hooks/rules-of-hooks": "error"
+        ]
     }
 }
