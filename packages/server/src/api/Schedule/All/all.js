@@ -1,6 +1,9 @@
 data = require('../../../DAL/interviews');
 Joi = require('joi');
 
+/*
+Date is an 8 characters long numeric string : DDMMYYYY
+ */
 const all = {
     method: 'GET',
     path: '/schedule/all',
