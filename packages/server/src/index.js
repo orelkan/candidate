@@ -1,6 +1,6 @@
 const Hapi = require('hapi');
 const Inert = require('inert');
-const Vision = require('Vision');
+const Vision = require('vision');
 const HapiSwagger = require('hapi-swagger');
 const Pack = require('../package');
 
@@ -16,6 +16,9 @@ const server = Hapi.server({
 });
 
 server.route(require('./api/isAlive'));
+server.route(require('./api/Schedule/Upcoming/upcoming'));
+server.route(require('./api/Schedule/All/all'));
+
 
 async function start() {
     try {
