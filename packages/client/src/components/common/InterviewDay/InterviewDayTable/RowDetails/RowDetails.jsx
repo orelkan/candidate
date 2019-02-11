@@ -6,6 +6,7 @@ import './RowDetails.css';
 
 const rowDetails = props => {
     const { interviewDate, firstName, lastName, ID, gender, phoneNumber } = props.interviewDetails;
+    const { onAddReportClick, onEditCandidateClick } = props;
     return (
         <tr className="RowDetails-tr">
             <th>{interviewDate.toLocaleTimeString()}</th>
@@ -15,12 +16,12 @@ const rowDetails = props => {
             <th>{gender}</th>
             <th>{phoneNumber}</th>
             <th>
-                <span className="RowDetails-icon">
+                <span className="RowDetails-icon shadow-sm" onClick={onAddReportClick}>
                     <FontAwesomeIcon icon={faFileMedical} />
                 </span>
             </th>
             <th>
-                <span className="RowDetails-icon">
+                <span className="RowDetails-icon shadow-sm" onClick={onEditCandidateClick}>
                     <FontAwesomeIcon icon={faEdit} />
                 </span>
             </th>
@@ -37,6 +38,8 @@ rowDetails.propTypes = {
         gender: PropTypes.oneOf(['Male', 'Female']),
         phoneNumber: PropTypes.string.isRequired,
     }),
+    onAddReportClick: PropTypes.func,
+    onEditCandidateClick: PropTypes.func,
 };
 
 rowDetails.defaultProps = {

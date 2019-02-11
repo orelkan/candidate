@@ -16,16 +16,16 @@ const interviewDayTable = props => {
     }
     return (
         <Table striped bordered size="sm" className="InterviewDayTable-table">
-            <thead className="InterviewDayTable-table-head">
+            <thead className="InterviewDayTable-table-head thead-dark">
                 <tr>
-                    <th>Hour</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>I.D</th>
-                    <th>Gender</th>
-                    <th>Phone Number</th>
-                    <th>Report</th>
-                    <th>Edit user</th>
+                    <th>שעה</th>
+                    <th>שם פרטי</th>
+                    <th>שם משפחה</th>
+                    <th>תעודת זהות</th>
+                    <th>מין</th>
+                    <th>מספר טלפון</th>
+                    <th>הוסף דוח</th>
+                    <th>ערוך משתמש</th>
                 </tr>
             </thead>
             <tbody>{tableBody}</tbody>
