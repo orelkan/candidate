@@ -12,10 +12,11 @@ const swaggerOptions = {
 };
 
 const server = Hapi.server({
-    port: 80 || process.env.PORT,
+    port: process.env.PORT || 80,
 });
 
 server.route(require('./api/isAlive'));
+server.route(require('./api/candidate'));
 server.route(require('./api/Schedule'));
 
 async function start() {

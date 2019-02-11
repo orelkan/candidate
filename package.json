@@ -7,13 +7,17 @@
         "packages/*"
     ],
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "run-server-nodemon": "PORT=3000 nodemon packages/server/src/index.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/dormesica/candidate.git"
     },
     "author": "Dor Mesica <dormesica10@gmail.com>",
+    "contributors": [
+        "Daniel Hermon <danielhermonsync@gmail.com>"
+    ],
     "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/dormesica/candidate/issues"

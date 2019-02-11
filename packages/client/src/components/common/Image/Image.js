@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-
 import { Spinner } from 'reactstrap';
 
 const Image = React.memo(props => {
@@ -25,7 +24,7 @@ const Image = React.memo(props => {
     const { src, className, spinnerSize } = props;
 
     return (
-        <div className={className} style={{ display: 'flex', width: '500px', height: '500px' }}>
+        <div className={className} style={{ display: 'flex' }}>
             <img
                 ref={ref}
                 src={src}
