@@ -1,1 +1,4 @@
-module.exports = [require('./getByID'), require('./getAll')];
+module.exports = [
+    require('./getByID'), 
+    require('./getAll')
+];

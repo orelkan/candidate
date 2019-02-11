@@ -1,13 +1,13 @@
-const getByIDHandler = require('../../handlers/candidate/getByIDHandler');
-const candidateSchema = require('./schemas').candidateSchema;
 const Joi = require('joi');
+const candidateSchema = require('./schemas').candidateSchema;
+const fakeCandidates = require('../../DAL/candidates');
 
 const getByIDAPI = {
     method: 'GET',
     path: '/candidate/{id}',
     options: {
         description: 'Get candidates',
-        notes: "Returns the candidate's information which was specified by id",
+        notes: 'Returns the candidate\'s information which was specified by id',
         tags: ['api', 'candidate'],
         validate: {
             params: {
@@ -25,5 +25,11 @@ const getByIDAPI = {
     },
     handler: getByIDHandler,
 };
+
+function getByIDHandler(request) {
+    const { id } = request.params;
+    // TODO when DB is available , fetch from DB
+    return fakeCandidates.filter(candidate => candidate.id === id)[0];
+}
 
 module.exports = getByIDAPI;
