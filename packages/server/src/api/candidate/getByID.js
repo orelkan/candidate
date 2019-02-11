@@ -1,5 +1,5 @@
 const getByIDHandler = require('../../handlers/candidate/getByIDHandler');
-const candidateSchema = require('./schemas');
+const candidateSchema = require('./schemas').candidateSchema;
 const Joi = require('joi');
 
 const getByIDAPI = {

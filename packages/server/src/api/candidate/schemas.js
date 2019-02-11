@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-module.exports = Joi.object({
+module.candidateSchema = Joi.object({
     name: Joi.string().required(),
     id: Joi.string().required(),
 });

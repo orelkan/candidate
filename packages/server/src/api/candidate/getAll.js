@@ -1,5 +1,5 @@
 const getAllHandler = require('../../handlers/candidate/getAllHandler');
-const candidateSchema = require('./schemas');
+const candidateSchema = require('./schemas').candidateSchema;
 const Joi = require('joi');
 
 const getAllAPI = {
