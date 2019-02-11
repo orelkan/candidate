@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-
 import { Spinner } from 'reactstrap';
 
 const Image = React.memo(props => {
