@@ -1,12 +1,11 @@
 data = require('../../../DAL/interviews');
 Joi = require('joi');
+handler = require('../../../handlers/Schedule/Upcoming/upcomingHandler');
 
 const upcoming = {
     method: 'GET',
     path: '/schedule/upcoming',
-    handler: (request, h) => {
-        return data.filter(interview => interview.date > new Date());
-    }
+    handler
     ,
     options: {
         description: "Gets all the upcoming interviews",
