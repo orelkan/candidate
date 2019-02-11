@@ -1,6 +1,6 @@
-const getAllHandler = require('../../handlers/candidate/getAllHandler');
-const candidateSchema = require('./schemas').candidateSchema;
 const Joi = require('joi');
+const candidateSchema = require('./schemas').candidateSchema;
+const fakeCandidates = require('../../DAL/candidates');
 
 const getAllAPI = {
     method: 'GET',
@@ -29,5 +29,11 @@ const getAllAPI = {
     },
     handler: getAllHandler,
 };
+
+function getAllHandler(request) {
+    const { from, to } = request.query;
+    // TODO when DB is available , fetch from DB
+    return fakeCandidates.filter((_, index) => index >= from && index <= to);
+}
 
 module.exports = getAllAPI;
