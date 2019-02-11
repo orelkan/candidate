@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileMedical, faEdit } from '@fortawesome/free-solid-svg-icons';
+
 import './RowDetails.css';
 
 const rowDetails = props => {
