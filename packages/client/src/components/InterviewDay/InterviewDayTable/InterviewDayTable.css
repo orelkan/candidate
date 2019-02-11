@@ -1,0 +1,11 @@
+.InterviewDayTable-table {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #555;
+    font-weight: 300;
+}
+
+.InterviewDayTable-table-head {
+    color: #000;
+    font-weight: 500;
+}
