@@ -1,4 +1,5 @@
 const fakeCandidates = require('../../DAL/candidates');
+
 function getByIDHandler(request) {
     const { id } = request.params;
     // TODO when DB is available , fetch from DB
