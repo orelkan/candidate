@@ -14,7 +14,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 2rem;
-    display: inline-block;
+    display: block;
     padding: 2rem;
     box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
 }

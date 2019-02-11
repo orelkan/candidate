@@ -44,8 +44,8 @@ const data = [
         phoneNumber: '6568222823',
     },
 ];
-storiesOf('InterviewDay', module)
-    .add('Table', () => {
+storiesOf('InterviewDayTable', module)
+    .add('with data', () => {
         return <InterviewDayTable interviews={data} />;
     })
     .add('with no data', () => <InterviewDayTable />);
