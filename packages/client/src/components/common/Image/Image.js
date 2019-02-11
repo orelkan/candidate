@@ -24,7 +24,7 @@ const Image = React.memo(props => {
     const { src, className, spinnerSize } = props;
 
     return (
-        <div className={className} style={{ display: 'flex', width: '500px', height: '500px' }}>
+        <div className={className} style={{ display: 'flex' }}>
             <img
                 ref={ref}
                 src={src}
