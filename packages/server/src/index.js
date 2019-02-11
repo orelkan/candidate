@@ -8,7 +8,7 @@ const swaggerOptions = {
     info: {
         title: 'Candidate management API',
         version: Pack.version,
-    }
+    },
 };
 
 const server = Hapi.server({
@@ -17,7 +17,6 @@ const server = Hapi.server({
 
 server.route(require('./api/isAlive'));
 server.route(require('./api/Schedule'));
-
 
 async function start() {
     try {
