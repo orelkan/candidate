@@ -1,5 +1,5 @@
 export function isNumber(variable) {
-    return typeof variable === 'number';
+    return !isNaN(variable) && typeof variable === 'number';
 }
 
 export function isString(variable) {

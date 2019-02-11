@@ -5,9 +5,10 @@ import { faFileMedical, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 import './RowDetails.css';
 
-const rowDetails = props => {
+const RowDetails = props => {
     const { interviewDate, firstName, lastName, ID, gender, phoneNumber } = props.interviewDetails;
-    const { onAddReportClick, onEditCandidateClick } = props;
+    const { onAddRClick, onEditClick } = props;
+
     return (
         <tr className="RowDetails-tr">
             <th>{interviewDate.toLocaleTimeString()}</th>
@@ -17,12 +18,12 @@ const rowDetails = props => {
             <th>{gender}</th>
             <th>{phoneNumber}</th>
             <th>
-                <span className="RowDetails-icon shadow-sm" onClick={onAddReportClick}>
+                <span className="RowDetails-icon shadow-sm" onClick={onAddRClick}>
                     <FontAwesomeIcon icon={faFileMedical} />
                 </span>
             </th>
             <th>
-                <span className="RowDetails-icon shadow-sm" onClick={onEditCandidateClick}>
+                <span className="RowDetails-icon shadow-sm" onClick={onEditClick}>
                     <FontAwesomeIcon icon={faEdit} />
                 </span>
             </th>
@@ -30,21 +31,17 @@ const rowDetails = props => {
     );
 };
 
-rowDetails.propTypes = {
+RowDetails.propTypes = {
     interviewDetails: PropTypes.shape({
         interviewDate: PropTypes.instanceOf(Date).isRequired,
         firstName: PropTypes.string.isRequired,
         lastName: PropTypes.string.isRequired,
         ID: PropTypes.string.isRequired,
-        gender: PropTypes.oneOf(['Male', 'Female']),
+        gender: PropTypes.oneOf(['Male', 'Female']).isRequired,
         phoneNumber: PropTypes.string.isRequired,
-    }),
-    onAddReportClick: PropTypes.func,
-    onEditCandidateClick: PropTypes.func,
+    }).isRequired,
+    onAddRClick: PropTypes.func,
+    onEditClick: PropTypes.func,
 };
 
-rowDetails.defaultProps = {
-    interviewDetails: { gender: 'UNKNOWN' },
-};
-
-export default rowDetails;
+export default RowDetails;

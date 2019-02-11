@@ -6,9 +6,10 @@ import RowDetails from './RowDetails/RowDetails';
 
 import './InterviewDayTable.css';
 
-const interviewDayTable = props => {
+const InterviewDayTable = props => {
     let tableBody = null;
     const { interviews = [] } = props;
+
     if (interviews.length === 0) {
         return (
             <div className="InterviewDayTable-noInterviewsDiv">
@@ -23,6 +24,7 @@ const interviewDayTable = props => {
             />
         ));
     }
+
     return (
         <Table striped bordered size="sm" className="InterviewDayTable-table">
             <thead className="InterviewDayTable-table-head thead-dark">
@@ -42,11 +44,11 @@ const interviewDayTable = props => {
     );
 };
 
-interviewDayTable.propTypes = {
+InterviewDayTable.propTypes = {
     interviews: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
-interviewDayTable.defaultProps = {
+InterviewDayTable.defaultProps = {
     interviews: [],
 };
 
-export default interviewDayTable;
+export default InterviewDayTable;
