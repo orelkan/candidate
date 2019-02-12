@@ -1,5 +1,5 @@
 const Joi = require('joi');
-const candidateSchema = require('./schemas').candidateSchema;
+const candidateSchema = require('../../schemas/candidates').basicInfo;
 const fakeCandidates = require('../../DAL/candidates');
 
 const getByIDAPI = {

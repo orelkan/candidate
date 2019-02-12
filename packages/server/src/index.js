@@ -17,7 +17,8 @@ const server = Hapi.server({
 
 server.route(require('./api/isAlive'));
 server.route(require('./api/candidate'));
-server.route(require('./api/Schedule'));
+server.route(require('./api/schedule'));
+server.route(require('./api/reviewers'));
 
 async function start() {
     try {
