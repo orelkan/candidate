@@ -4,8 +4,8 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
-import InterviewLocation from '../components/InterviewLocation/InterviewLocation'
-import InterviewDate from '../components/InterviewDate/InterviewDate'
+import InterviewLocation from '../components/interviewLocation/interviewLocation'
+import InterviewDate from '../components/interviewDate/interviewDate'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const req = require.context('../components', true, /stories\.js/);

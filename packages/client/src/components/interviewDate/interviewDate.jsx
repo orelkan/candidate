@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCalendar} from '@fortawesome/free-regular-svg-icons';
-import './InterviewDate.css'
+import './interviewDate.css'
 
 const DateToHebrewDay = (date) => {
     switch(date.getDay()){
