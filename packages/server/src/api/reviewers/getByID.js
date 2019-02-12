@@ -1,5 +1,5 @@
 const Joi = require('joi');
-const { reviewerScheme } = require('./reviewersSchema');
+const { basicInfo: reviewerScheme } = require('../../schemas/reviewers');
 const dal = require('../../DAL/reviewers');
 
 const get = {
@@ -7,7 +7,7 @@ const get = {
     path: '/reviewers/{id}',
     options: {
         description: 'Get interviewer details',
-        notes: "Returns the interviewer's information which was specified by id",
+        notes: 'Returns the interviewer\'s information which was specified by id',
         tags: ['api', 'interviewer'],
         validate: {
             params: {
