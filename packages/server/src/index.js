@@ -1,6 +1,6 @@
 const Hapi = require('hapi');
 const Inert = require('inert');
-const Vision = require('Vision');
+const Vision = require('vision');
 const HapiSwagger = require('hapi-swagger');
 const Pack = require('../package');
 
@@ -8,14 +8,16 @@ const swaggerOptions = {
     info: {
         title: 'Candidate management API',
         version: Pack.version,
-    }
+    },
 };
 
 const server = Hapi.server({
-    port: 80 || process.env.PORT,
+    port: process.env.PORT || 80,
 });
 
 server.route(require('./api/isAlive'));
+server.route(require('./api/candidate'));
+server.route(require('./api/Schedule'));
 
 async function start() {
     try {
