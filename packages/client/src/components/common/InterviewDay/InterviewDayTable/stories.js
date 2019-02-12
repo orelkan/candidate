@@ -8,7 +8,7 @@ const data = [
         lastName: 'החמדן',
         ID: '360727597',
         gender: 'נקבה',
-        interviewDate: new Date('2019-01-16T05:49:09Z'),
+        interviewDate: new Date('2019-01-16T05:45:00Z'),
         phoneNumber: '4537830527',
     },
     {
@@ -16,7 +16,7 @@ const data = [
         lastName: '60',
         ID: '147461800',
         gender: 'נקבה',
-        interviewDate: new Date('2019-01-16T05:49:09Z'),
+        interviewDate: new Date('2019-01-16T06:45:00Z'),
         phoneNumber: '2364203697',
     },
     {
@@ -24,7 +24,7 @@ const data = [
         lastName: 'יעקב',
         ID: '624030537',
         gender: 'זכר',
-        interviewDate: new Date('2019-01-16T05:49:09Z'),
+        interviewDate: new Date('2019-01-16T07:45:00Z'),
         phoneNumber: '7765657050',
     },
     {
@@ -32,7 +32,7 @@ const data = [
         lastName: 'עמיר',
         ID: '139690402',
         gender: 'נקבה',
-        interviewDate: new Date('2019-01-16T05:49:09Z'),
+        interviewDate: new Date('2019-01-16T08:45:00Z'),
         phoneNumber: '2559630282',
     },
     {
@@ -40,7 +40,7 @@ const data = [
         lastName: 'ביטר',
         ID: '506415388',
         gender: 'זכר',
-        interviewDate: new Date('2019-01-16T05:49:09Z'),
+        interviewDate: new Date('2019-01-16T09:45:00Z'),
         phoneNumber: '6568222823',
     },
 ];

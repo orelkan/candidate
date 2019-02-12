@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Table } from 'reactstrap';
-import RowDetails from './RowDetails/RowDetails';
+
+import RowDetails from './RowDetails';
 
 import './InterviewDayTable.css';
 
 const InterviewDayTable = props => {
-    let tableBody = null;
     const { interviews = [] } = props;
 
     if (interviews.length === 0) {
@@ -16,14 +15,13 @@ const InterviewDayTable = props => {
                 <span className="InterviewDayTable-noInterviewsSpan display-1 lead">אין ראיונות</span>
             </div>
         );
-    } else {
-        tableBody = interviews.map(interviewDetails => (
-            <RowDetails
-                key={'interview_table' + interviewDetails.interviewDate.getTime()}
-                interviewDetails={interviewDetails}
-            />
-        ));
     }
+    const tableBody = interviews.map(interviewDetails => (
+        <RowDetails
+            key={'interview_table' + interviewDetails.interviewDate.getTime()}
+            interviewDetails={interviewDetails}
+        />
+    ));
 
     return (
         <Table striped bordered size="sm" className="InterviewDayTable-table">
@@ -46,9 +44,6 @@ const InterviewDayTable = props => {
 
 InterviewDayTable.propTypes = {
     interviews: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
-InterviewDayTable.defaultProps = {
-    interviews: [],
 };
 
 export default InterviewDayTable;

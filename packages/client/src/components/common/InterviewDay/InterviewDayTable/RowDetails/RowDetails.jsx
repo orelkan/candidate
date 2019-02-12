@@ -37,7 +37,7 @@ RowDetails.propTypes = {
         firstName: PropTypes.string.isRequired,
         lastName: PropTypes.string.isRequired,
         ID: PropTypes.string.isRequired,
-        gender: PropTypes.oneOf(['Male', 'Female']).isRequired,
+        gender: PropTypes.oneOf(['נקבה', 'זכר']).isRequired,
         phoneNumber: PropTypes.string.isRequired,
     }).isRequired,
     onAddRClick: PropTypes.func,
