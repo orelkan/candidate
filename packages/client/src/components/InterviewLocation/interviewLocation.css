@@ -1,0 +1,26 @@
+.h6_location{
+    margin: 0px;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
+.locationContainer{
+    height: 100px;
+    width: 100px
+}
+
+.locationIcon{
+    margin:2px 0px 5px 5px;
+
+}
+
+.locationDetailsContainer{
+
+}
+
+.IconContainer{
+    height: 100px;
+    width: 100px;
+    font-size: 57px;
+    display: flex;
+}
