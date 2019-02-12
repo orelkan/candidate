@@ -1,9 +1,7 @@
-const handler = require('../handlers/isAlive');
-
 const isAlive = {
     method: 'GET',
     path: '/isAlive',
-    handler,
+    handler: () => 'Alive and kickin...',
 };
 
 module.exports = isAlive;
