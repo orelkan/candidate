@@ -1,11 +1,6 @@
 const Joi = require('joi');
 const dal = require('../../DAL/reviewers');
-
-const interviewerSchema = Joi.object({
-    id: Joi.string().regex(/[0-9]+/).length(7).required(),
-    first_name: Joi.string().required(),
-    last_name: Joi.string().required()
-});
+const { reviewerScheme } = require('./reviewersSchema');
 
 const get = {
     method: 'GET',
