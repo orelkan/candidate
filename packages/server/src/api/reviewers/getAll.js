@@ -24,7 +24,7 @@ const get = {
             },
         },
         response: {
-            schema: Joi.array().items(interviewerSchema),
+            schema: Joi.array().items(reviewerScheme),
         },
         handler,
     }
