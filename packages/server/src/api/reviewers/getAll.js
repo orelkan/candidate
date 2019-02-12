@@ -1,13 +1,13 @@
 const Joi = require('joi');
 const dal = require('../../DAL/reviewers');
-const { reviewerScheme } = require('./reviewersSchema');
+const { basicInfo: reviewerScheme } = require('../../schemas/reviewers');
 
 const get = {
     method: 'GET',
     path: '/reviewers/all',
     options: {
         description: 'Get all interviewers details',
-        notes: "Returns the all interviewer's informotions",
+        notes: 'Returns the all interviewer\'s informotions',
         tags: ['api', 'interviewers data'],
         validate: {
             query: {
@@ -27,7 +27,7 @@ const get = {
             schema: Joi.array().items(reviewerScheme),
         },
         handler,
-    }
+    },
 };
 
 function handler(request) {
