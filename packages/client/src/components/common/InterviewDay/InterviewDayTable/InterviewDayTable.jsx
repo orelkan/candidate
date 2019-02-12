@@ -7,7 +7,7 @@ import RowDetails from './RowDetails';
 import './InterviewDayTable.css';
 
 const InterviewDayTable = props => {
-    const { interviews = [] } = props;
+    const { interviews } = props;
 
     if (interviews.length === 0) {
         return (
@@ -17,10 +17,7 @@ const InterviewDayTable = props => {
         );
     }
     const tableBody = interviews.map(interviewDetails => (
-        <RowDetails
-            key={'interview_table' + interviewDetails.interviewDate.getTime()}
-            interviewDetails={interviewDetails}
-        />
+        <RowDetails key={interviewDetails.interviewDate.getTime()} interviewDetails={interviewDetails} />
     ));
 
     return (
