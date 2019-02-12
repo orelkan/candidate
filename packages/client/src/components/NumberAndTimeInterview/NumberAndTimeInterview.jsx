@@ -2,7 +2,7 @@ import React from 'react';
 import './NumberAndTimeInterview.css';
 import TimeInterview from '../InterviewTime/InterviewTime'
 import NumberOfCandidtaes from '../NumberOfCandidates/NumberOfCandidates'
-import { faHourglassStart, faHourglassEnd, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faHourglassStart, faHourglassEnd } from '@fortawesome/free-solid-svg-icons';
 
 const NumberAndTimeInterview = (props) => (
     <div className="data-grid">
