@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Container, Row, Col, Input, Button } from 'reactstrap';
-import CatIcon from '../../assets/cat.png';
+import CatIcon from '../../../assets/cat.png';
 import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,25 +1,28 @@
+@media screen and (max-width: 1000px) {
+  #login-box {
+    margin: 10px auto;
+    min-width: 30%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #login-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 30%;
+  }
+}
+
+#login-box {
+  text-align: center;
+}
+
 #login-button {
     width: 100%;
 }
-
-@media screen and (max-width: 1000px) {
-    #login-box {
-        margin: 10px auto;
-        min-width: 30%;
-        max-width: 80%;
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    #login-box {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 30%;
-    }
-  }
-
 
 .container:first-child .row:first-child {
     margin: 0;
