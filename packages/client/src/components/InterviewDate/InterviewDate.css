@@ -1,0 +1,17 @@
+.h6_date{
+    margin: 0px;
+    padding: 0px;
+}
+
+.h5_date{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.IconContainer{
+    height: 75px;
+    width: 65px;
+    font-size: 57px;
+    display: flex;
+}

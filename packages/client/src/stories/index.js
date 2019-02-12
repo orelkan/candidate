@@ -4,7 +4,8 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
-
+import InterviewLocation from '../components/InterviewLocation/InterviewLocation'
+import InterviewDate from '../components/InterviewDate/InterviewDate'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const req = require.context('../components', true, /stories\.js/);
@@ -22,4 +23,17 @@ storiesOf('Button', module)
                 😀 😎 👍 💯
             </span>
         </Button>
+    ));
+
+storiesOf('InterviewLocation', module)
+    .add('location', () =>(
+        <InterviewLocation
+            location={"גלילות"}
+            imgSrc={"https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/1200px-025Pikachu.png"} //temp img
+        />
+        ))
+    .add('dateViewer', () => (
+        <InterviewDate
+            date = {new Date()}
+        />
     ));
