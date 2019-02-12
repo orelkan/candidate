@@ -48,4 +48,4 @@ storiesOf('InterviewDayTable', module)
     .add('with data', () => {
         return <InterviewDayTable interviews={data} />;
     })
-    .add('with no data', () => <InterviewDayTable />);
+    .add('with no data', () => <InterviewDayTable interviews={[]} />);
