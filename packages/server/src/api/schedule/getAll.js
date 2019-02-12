@@ -1,12 +1,6 @@
-Joi = require('joi');
-data = require('../../../DAL/interviews');
-handler = require('../../../handlers/Schedule/All/allHandler');
-
-const interviewSchema = Joi.object({
-    date: Joi.date().required(),
-    candidateName: Joi.string().required(),
-    interviewerName: Joi.string().required(),
-});
+const Joi = require('joi');
+const data = require('../../DAL/interviews');
+const { interview: interviewSchema } = require('../../schemas/interviews');
 
 /*
 Date is an ISO date
@@ -34,5 +28,11 @@ const all = {
         },
     },
 };
+
+function handler(request) {
+    const from = new Date(request.query.from);
+    const to = new Date(request.query.to);
+    return data.filter(interview => interview.date >= from && interview.date <= to);
+}
 
 module.exports = all;
