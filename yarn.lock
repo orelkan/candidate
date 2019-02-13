@@ -3228,6 +3228,23 @@ boom@7.x.x, boom@^7.1.1:
   dependencies:
     hoek "6.x.x"
 
+bootstrap-rtl@^3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/bootstrap-rtl/-/bootstrap-rtl-3.3.4.tgz#4f813e6fce91aa9f47ad47f48172355af61c1b11"
+  integrity sha1-T4E+b86Rqp9HrUf0gXI1WvYcGxE=
+  dependencies:
+    bootstrap "^3.3.4"
+
+bootstrap-v4-rtl@^4.1.1-1:
+  version "4.1.1-1"
+  resolved "https://registry.yarnpkg.com/bootstrap-v4-rtl/-/bootstrap-v4-rtl-4.1.1-1.tgz#453928bb8dfeebe8dd0ddabe2320baad8727438d"
+  integrity sha512-n39Ub7ak2vZEIJqEMMUHSWRxiFnQ1fb4NQEQMRnc//lCfiesyksvp4K72uMzE7H/EeM4MSma9k10nVJqj21kCQ==
+
+bootstrap@^3.3.4:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.0.tgz#f8d77540dd3062283d2ae7687e21c1e691961640"
+  integrity sha512-F1yTDO9OHKH0xjl03DsOe8Nu1OWBIeAugGMhy3UTIYDdbbIPesQIhCEbj+HEr6wqlwweGAlP8F3OBC6kEuhFuw==
+
 bootstrap@^4.2.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.0.tgz#2559ccb8d45426ac6c54db23eb3d1c9f4257fa22"
