@@ -25,10 +25,7 @@ const get = {
     handler,
 };
 function handler(request) {
-    console.log("7");
     const returnValue = dal.filter(interviewer => interviewer.id === request.params.id);
-    console.log(returnValue);
-    console.log(reviewerScheme);
     return returnValue;
 }
 
