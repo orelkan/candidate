@@ -3,8 +3,6 @@ import { storiesOf, configure } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { Button, Welcome } from '@storybook/react/demo';
 import LoginPage from '../components/Layout/Login';
 

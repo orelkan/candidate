@@ -16,7 +16,7 @@
   }
 }
 
-#login-box {
+#login-box, .alert {
   text-align: center;
 }
 
@@ -36,12 +36,17 @@
     margin-top: 30px;
 }
 
-.container:first-child {
-    border-radius: 10px 10px 0 0;
-    background-color: #ffffff6c;
-    box-shadow: none;
-    color: white;
-    padding: 0 10px;
+.alert {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header-container {
+    border-radius: 10px 10px 0 0 !important;
+    background-color: #ffffff6c !important;
+    box-shadow: none !important;
+    color: white !important;
+    padding: 0 10px !important;
 }
 
 .container {
