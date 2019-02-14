@@ -36,7 +36,10 @@ function LoginPage(props) {
             }
         })
         .catch(err => {
-            console.log(err.response.status);
+            if (!err.response) {
+                setErrorMessages("שרת לא פעיל");
+                return
+            }
             switch(err.response.status) {
                 case 400: 
                     setErrorMessages("הקלד שם משתמש קיים במערכת");
