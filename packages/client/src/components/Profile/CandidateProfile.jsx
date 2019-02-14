@@ -11,18 +11,18 @@ class CandidateProfile extends React.Component {
                 <Card>
                     <CardImg top width="100%" src={image} alt="Card image cap" />
                     <CardBody>
-                        <CardTitle>אסנת אברג'יל</CardTitle>
-                        <CardText className="sub-title">מלש"ב</CardText>
+                        <CardTitle>{this.props.fullName}</CardTitle>
+                        <CardText className="sub-title">{this.props.type}</CardText>
                         <CardText>
-                            <medium className="text-muted">ת 18, מרעננה אוהבת לשחק כדורסל ולשיר באמבטיה ת 18, מרעננה אוהבת לשחק כדורסל ולשיר באמבטיה ת 18, מרעננה אוהבת לשחק כדורסל ולשיר באמבטיה ת 18, מרעננה אוהבת לשחק כדורסל ולשיר באמבטיה בת 18, מרעננה אוהבת לשחק כדורסל ולשיר באמבטיה</medium>
+                            <medium className="text-muted">{this.props.discription}</medium>
                         </CardText>
                         <CardText>
                             <FontAwesomeIcon className="phone-icon" size="1x" icon={faPhone} />
-                            <span className="data-icon">052-3156482</span>
+                            <span className="data-icon">{this.props.phoneNumber}</span>
                         </CardText>
                         <CardText>
                             <FontAwesomeIcon className="at-icon" size="1x" icon={faAt} />
-                            <span className="data-icon">Osnat@gmail.com</span>
+                            <span className="data-icon">{this.props.email}</span>
                         </CardText>
                     </CardBody>
                 </Card>
