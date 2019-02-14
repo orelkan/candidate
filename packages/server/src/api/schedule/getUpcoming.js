@@ -1,12 +1,6 @@
-data = require('../../../DAL/interviews');
-Joi = require('joi');
-handler = require('../../../handlers/Schedule/Upcoming/upcomingHandler');
-
-const interviewSchema = Joi.object({
-    date: Joi.date().required(),
-    candidateName: Joi.string().required(),
-    interviewerName: Joi.string().required(),
-});
+const Joi = require('joi');
+const data = require('../../DAL/interviews');
+const { interview: interviewSchema } = require('../../schemas/interviews');
 
 const upcoming = {
     method: 'GET',
@@ -21,5 +15,9 @@ const upcoming = {
         },
     },
 };
+
+function handler() {
+    return data.filter(interview => interview.date > new Date());
+}
 
 module.exports = upcoming;

@@ -13,29 +13,12 @@ const swaggerOptions = {
 
 const server = Hapi.server({
     port: process.env.PORT || 80,
-    routes:{
-        cors: {
-            origin: ['*'],
-            credentials : true,
-        }
-    }
 });
 
 server.route(require('./api/isAlive'));
 server.route(require('./api/candidate'));
 server.route(require('./api/schedule'));
 server.route(require('./api/reviewers'));
-server.route(require('./api/login'))
-
-//configure cookie
-server.state('data', {
-    ttl: null,
-    isSecure: false,
-    isHttpOnly: false,
-    encoding: 'base64json',
-    clearInvalid: false,
-    strictHeader: false
-});
 
 async function start() {
     try {

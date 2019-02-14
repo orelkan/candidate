@@ -2,11 +2,8 @@ import React from 'react';
 import { storiesOf, configure } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
-
 import { Button, Welcome } from '@storybook/react/demo';
-import LoginPage from '../components/Layout/Login';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css';
 
 const req = require.context('../components', true, /stories\.js/);
 configure(() => {
@@ -24,5 +21,3 @@ storiesOf('Button', module)
             </span>
         </Button>
     ));
-
-storiesOf("Layout", module).add("login page", () => <LoginPage />);
