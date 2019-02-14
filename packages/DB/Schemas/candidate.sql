@@ -11,6 +11,8 @@ CREATE TABLE public.candidate
     street text NOT NULL,
     birth_date date NOT NULL,
     aliyah_date date,
+    house_number integer,
+    phone_number text,
     gender text COLLATE pg_catalog."default",
     birth_state text COLLATE pg_catalog."default" NOT NULL,
     israeli_citizenship integer NOT NULL,
@@ -24,8 +26,7 @@ CREATE TABLE public.candidate
 WITH (
     OIDS = FALSE
 )
-TABLESPACE pg_default;
-
+TABLESPACE pg_defa
 ALTER TABLE public.candidate
     OWNER to postgres;
 

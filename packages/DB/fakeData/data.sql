@@ -1,21 +1,21 @@
 INSERT INTO public.candidate(
-	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date)
-	VALUES ('123456789', 'avi', 'bitter', 'new-york', 'male', 'Israel', 1, 0, 97, 0, 1, 0, 'Hatul 55', '2000/10/12');
+	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, house_number, phone_number)
+	VALUES ('123456789', 'avi', 'bitter', 'new-york', 'male', 'Israel', 1, 0, 97, 0, 1, 0, 'Hatul 55', '2000/10/12', 22, '05412345679');
 INSERT INTO public.candidate(
-	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date)
-	VALUES ('987654321', 'abraham', 'sweeter', 'Eilat', 'female', 'Israel', 1, 1, 82, 0, 0, 1, 'MitziBiton 55', '2000/08/02');
+	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, house_number, phone_number)
+	VALUES ('987654321', 'abraham', 'sweeter', 'Eilat', 'female', 'Israel', 1, 1, 82, 0, 0, 1, 'MitziBiton 55', '2000/08/02', 41, '05412345679');
 INSERT INTO public.candidate(
-	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date)
-	VALUES ('741852963', 'Jacob', 'bitter', 'Tveria', 'male', 'Israel', 1, 0, 72, 1, 1, 1, 'MitziBiton 35', '2001/01/25');
+	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, house_number, phone_number)
+	VALUES ('741852963', 'Jacob', 'bitter', 'Tveria', 'male', 'Israel', 1, 0, 72, 1, 1, 1, 'MitziBiton 35', '2001/01/25', 1, '05412345679');
 INSERT INTO public.candidate(
-	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date)
-	VALUES ('963852741', 'Israel', 'Salty', 'Tel-Aviv', 'female', 'Israel', 1, 1, 64, 0, 0, 0, 'RakBegin 20', '2001/03/03');
+	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, house_number, phone_number)
+	VALUES ('963852741', 'Israel', 'Salty', 'Tel-Aviv', 'female', 'Israel', 1, 1, 64, 0, 0, 0, 'RakBegin 20', '2001/03/03', 12, '05412345679');
 INSERT INTO public.candidate(
-	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, aliyah_date)
-	VALUES ('852741963', 'Toast', 'bitter', 'Brusselss', 'female', 'Belgium', 1, 0, 45, 1, 1, 0, 'RakBibi 4000', '2001/07/03', '2002/12/23');
+	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, aliyah_date, house_number, phone_number)
+	VALUES ('852741963', 'Toast', 'bitter', 'Brusselss', 'female', 'Belgium', 1, 0, 45, 1, 1, 0, 'RakBibi 4000', '2001/07/03', '2002/12/23', 31, '05412345679');
 INSERT INTO public.candidate(
-	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, aliyah_date)
-    VALUES ('951362487', 'Mitzi', 'Biton', 'Barcelona', 'male', 'Spain', 1, 1, 21, 0, 1, 1, 'HaBeizim 5', '2000/02/02', '2002/01/01');
+	id, first_name, last_name, city, gender, birth_state, israeli_citizenship, additional_citizenship, medical_profile, is_only_child, is_beavered_son, does_study_orthodox_school, street, birth_date, aliyah_date, house_number, phone_number)
+    VALUES ('951362487', 'Mitzi', 'Biton', 'Barcelona', 'male', 'Spain', 1, 1, 21, 0, 1, 1, 'HaBeizim 5', '2000/02/02', '2002/01/01', 25, '05412345679');
 
 
 INSERT INTO public.users(
