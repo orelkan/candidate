@@ -1,0 +1,39 @@
+.can-details-root{
+    padding: 2em;
+    direction: rtl;
+    text-align: right;
+}
+
+.can-details-root input[disabled], .can-details-root select[disabled]{
+    background: transparent;
+    border: 1px dashed #00000033;
+}
+
+.can-details-root input, .can-details-root select{
+    border: 1px solid #0080009e;
+}
+
+.can-details-submit{
+    width: 100%;
+}
+
+.can-full-width{
+    width: 100%;
+}
+
+.can-details-root input[type=checkbox] {
+    transform: scale(2);
+    margin-top: 9px;
+}
+
+.can-details-checkbox-text {
+    margin-right: 1.5em;
+}
+
+.can-header-btn{
+    margin: auto;
+}
+
+.can-details-header{
+    margin-bottom: 2em;
+}
