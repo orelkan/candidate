@@ -1,50 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCalendar} from '@fortawesome/free-regular-svg-icons';
-import './interviewDate.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-regular-svg-icons';
+import './InterviewDate.css';
 
-const DateToHebrewDay = (date) => {
-    switch(date.getDay()){
-        case 0:
-            return 'יום ראשון';
-        case 1:
-            return 'יום שני';
-        case 2:
-            return 'יום שלישי';
-        case 3:
-            return 'יום רביעי';
-        case 4:
-            return 'יום חמישי';
-        case 5:
-            return 'יום שישי';
-        case 6:
-            return 'יום שבת';
-        default:
-            throw "no such day exists!"
-    }
+const dateToHebrewMapping = {
+    0: 'יום ראשון',
+    1: 'יום שני',
+    2: 'יום שלישי',
+    3: 'יום רביעי',
+    4: 'יום חמישי',
+    5: 'יום שישי',
+    6: 'יום שבת',
 };
 
-function interviewLocation(props){
+function InterviewDate(props) {
     return (
-        <div style={{display:'flex', margin: '5px'}}>
-            <div className={"IconContainer"}>
-                <FontAwesomeIcon icon={faCalendar}/>
+        <div style={{ display: 'flex', margin: '5px' }}>
+            <div className={'InterviewDate-Icon-Container'}>
+                <FontAwesomeIcon icon={faCalendar} />
             </div>
             <div>
-                <h5 className={"h5_date"}>
-                    {DateToHebrewDay(props.date)}
-                </h5>
-                <h6>
-                    {props.date.toLocaleDateString()}
-                </h6>
+                <h5 className={'InterviewDate-h5-date'}>{dateToHebrewMapping[props.date.getDay()]}</h5>
+                <h6>{props.date.toLocaleDateString()}</h6>
             </div>
         </div>
-    )
+    );
 }
 
-interviewLocation.propTypes = {
-    date: PropTypes.instanceOf(Date)
+InterviewDate.propTypes = {
+    date: PropTypes.instanceOf(Date).isRequired,
 };
 
-export default interviewLocation
+export default InterviewDate;
