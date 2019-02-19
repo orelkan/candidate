@@ -1,4 +1,3 @@
-
 const Joi = require('joi');
 const data = require('../../DAL/interviews');
 const { interview: interviewSchema } = require('../../schemas/interviews');

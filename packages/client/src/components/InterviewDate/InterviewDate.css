@@ -1,0 +1,16 @@
+.InterviewDate-h6-date {
+    margin: 0px;
+    padding: 0px;
+}
+
+.InterviewDate-h5-date {
+    margin: 0px;
+    padding: 0px;
+}
+
+.InterviewDate-Icon-Container {
+    height: 75px;
+    width: 65px;
+    font-size: 57px;
+    display: flex;
+}
