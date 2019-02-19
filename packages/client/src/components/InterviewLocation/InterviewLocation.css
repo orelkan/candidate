@@ -1,0 +1,21 @@
+.InterviewLocation-h6-location {
+    margin: 0px;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
+.InterviewLocation-location-Container {
+    height: 60px;
+    width: 100px;
+}
+
+.InterviewLocation-location-Icon {
+    margin: 2px 0px 5px 5px;
+}
+
+.InterviewLocation-Icon-Container {
+    height: 62px;
+    width: 100px;
+    font-size: 57px;
+    display: flex;
+}
