@@ -1,7 +1,7 @@
 import React from 'react';
 import './NumberAndTimeInterview.css';
-import TimeInterview from '../InterviewTime/InterviewTime'
-import NumberOfCandidtaes from '../NumberOfCandidates/NumberOfCandidates'
+import TimeInterview from './InterviewTime/InterviewTime'
+import NumberOfCandidtaes from './NumberOfCandidates/NumberOfCandidates'
 import { faHourglassStart, faHourglassEnd } from '@fortawesome/free-solid-svg-icons';
 
 const NumberAndTimeInterview = (props) => (
