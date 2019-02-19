@@ -1,0 +1,55 @@
+.ml-auto, .mx-auto {
+    margin: 0 auto 0 0 !important;
+}
+
+.navbar {
+    direction: rtl;
+    box-shadow: 0 -5px 20px 0px #575757;
+}
+
+.person-icon img {
+    width: 50px;
+    user-select: none;
+    -webkit-user-drag: none;
+    border-radius: 50%;
+}
+
+.person-icon {
+    display: inline-block;
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.person-info p {
+    margin-left: 10px;
+    color: #222;
+    display: inline-block;
+}
+
+.nav-item:first-of-type {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search-by-id {
+    display:flex;
+}
+
+.search-by-id input {
+    border-radius: 0 5px 5px 0;
+    color: #555;
+}
+
+.search-by-id .input-group-text {
+    border-radius: 5px 0 0 5px;
+    background-color: #f8f8f8;
+    color: #ccc;
+}
+
+.search-by-id .input-group-text:hover {
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+}
