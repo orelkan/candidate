@@ -1,0 +1,25 @@
+.numbers-of-candidtates{
+    color: black;
+    width: 400px;
+    margin: auto;
+}
+
+.numbers-of-candidtates-title {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.numbers-of-candidtates-data{
+    height: 90px;
+}
+
+.numbers-of-candidtates-number {
+    display: inline-block;
+    font-size: 5rem;
+    margin-right: 2rem;
+}
+
+.numbers-of-candidtates-icon {
+    margin-right: 50px;
+}

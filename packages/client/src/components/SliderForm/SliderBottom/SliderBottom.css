@@ -1,0 +1,29 @@
+.summary-h2{
+  float: right;
+  position: absolute;
+  bottom: 0;
+}
+
+.row-bottom{
+  margin-top: 50px;
+}
+
+.bottom-container{
+  border-top: 2px solid rgb(105, 103, 107);
+  margin-bottom: 50px;
+
+}
+
+.description-input-summary{
+  width: 506px;
+  height: 96px;
+  resize: none;
+  margin-right: 20px;
+}
+
+.input-select{
+  width: 506px;
+  margin-right: 20px;
+}
+
+    

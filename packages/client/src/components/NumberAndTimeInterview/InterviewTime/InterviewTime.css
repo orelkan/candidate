@@ -1,0 +1,24 @@
+.interviewTime-stop{
+    display: grid;
+}
+
+.stopt-time-title{
+    height: 7px;
+}
+
+.stop-time{
+    font-size: 2.5rem; 
+    margin-right: 9px;  
+}
+
+.time-display{
+    width: 130px;
+    display: -webkit-inline-box;
+
+}
+
+.interviewTime{
+    display: flex;
+    font-size: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+}

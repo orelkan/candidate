@@ -1,0 +1,23 @@
+.data-header{
+    direction: rtl;
+    display: flex;
+    margin: auto;
+    /* width: 40%;
+    border-bottom: 3px solid rgb(84, 87, 84);
+    padding: 10px; */
+}
+.data-row{
+    flex: none;
+    border-bottom: 2px solid rgb(105, 103, 107);
+}
+
+.interview-data{
+    display: flex;
+    padding: 0 2rem;
+}
+.interview-data-h2{
+    padding: 0 1rem;
+    font-size: 25px;
+    padding-top: 5px;
+    color: rgb(54, 24, 192)
+}
