@@ -1,0 +1,64 @@
+.card {
+    min-width: 600px;
+    min-height: 400px;
+    max-width: 600px;
+    max-height: 400px;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    background-color: #fafafa;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.card-divder {
+    width: 80%;
+    height: 1px;
+    border-bottom: 1px solid #444;
+}
+.card-header-1 {
+    min-height: 25%;
+}
+
+.card-header-icon {
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+}
+
+.card-header-icon[gender='זכר'] {
+    color: rgba(0, 0, 255, 0.4);
+}
+
+.card-header-icon[gender='נקבה'] {
+    color: rgba(248, 24, 124, 0.4);
+}
+
+.card-header-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px #555;
+}
+
+.card-body {
+    min-height: 50%;
+}
+
+.card-footer-1 {
+    min-height: 25%;
+}
+
+.card-footer-editBtn {
+    border: none;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    float: left;
+    background-color: #3cff22a4;
+    color: white;
+    box-shadow: 3px 3px 1rem rgba(0, 0, 0, 0.2);
+}
+
+.card-footer-editBtn:hover {
+    cursor: pointer;
+    background-color: #29ff22;
+}
