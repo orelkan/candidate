@@ -1,6 +1,7 @@
 @media screen and (max-width: 1000px) {
   #login-box {
-    margin: 10px auto;
+    margin: 0 auto;
+    padding-top: 20px;
     min-width: 30%;
     max-width: 80%;
   }
@@ -23,20 +24,20 @@
 #login-button {
     width: 100%;
 }
-
-.container:first-child .row:first-child {
+/*ADDED #login-box*/
+#login-box .container:first-child .row:first-child {
     margin: 0;
 }
 
-.row {
+#login-box .row {
     margin-top: 10px;
 }
 
-.row:last-child {
+#login-box .row:last-child {
     margin-top: 30px;
 }
 
-.alert {
+#login-box .alert {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -49,7 +50,8 @@
     padding: 0 10px !important;
 }
 
-.container {
+
+#login-box .container {
     background-color: #ffffff3d;
     padding: 10px;
     border-radius: 0 0 10px 10px;
@@ -58,6 +60,7 @@
 
 p {
     margin-top: 10px;
+    margin-bottom: 0px;
     color: white;
 }
 
@@ -68,7 +71,7 @@ p {
 
 #stars, #stars2, #stars3 {
     position: fixed;
-    right: 1000px;
+    right: 1400px;
 }
 
 #stars {

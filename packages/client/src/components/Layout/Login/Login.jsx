@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Container, Row, Col, Input, Button, Alert } from 'reactstrap';
+import {Container, Row, Col, Input, Button, Alert, Form } from 'reactstrap';
 import CatIcon from '../../../assets/cat.png';
 import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,7 @@ import './Login.css';
 
 const sendLoginData = (username ,password) => {
     //TODO change server adress
-    return axios.post(`http://desktop-gb2pqr1/login`, { username, password },
+    return axios.post(`http://desktop-gb2pqr1:80/login`, { username, password },
     {withCredentials: true})
 }
 
@@ -36,19 +36,24 @@ function LoginPage(props) {
             }
         })
         .catch(err => {
-            if (!err.response) {
-                setErrorMessages("שרת לא פעיל");
-                return
+            if (username !== '' && password !== '') {
+                if (!err.response) {
+                    setErrorMessages("שרת לא פעיל");
+                    return
+                }
+                switch(err.response.status) {
+                    case 400: 
+                        setErrorMessages("שם משתמש אינו תואם את הפורמט");
+                        break;
+                    case 401: 
+                        setErrorMessages("שם משתמש וסיסמא אינם תואמים");
+                        break;
+                    default: 
+                        setErrorMessages(err.message)
+                }
             }
-            switch(err.response.status) {
-                case 400: 
-                    setErrorMessages("הקלד שם משתמש קיים במערכת");
-                    break;
-                case 401: 
-                    setErrorMessages("שם משתמש וסיסמא אינם תואמים");
-                    break;
-                default: 
-                    setErrorMessages(err.message)
+            else {
+                setErrorMessages("נא מלא את כל השדות");
             }
         })
     }
@@ -56,9 +61,14 @@ function LoginPage(props) {
     if (isLoggedIn) {
         return <Redirect to="/" />
     }
-
     
     return (
+        <div style={{ 
+                width: '100%',
+                minHeight: '100vh',
+                background: 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) no-repeat center center fixed',
+                backgroundSize: 'cover'
+            }}>
         <div id="login-box">
             {!errorMessages=='' ? ( <Alert color="danger">{errorMessages}</Alert> ) : ''}
             <Container className="header-container">
@@ -67,28 +77,31 @@ function LoginPage(props) {
                 </Row>
             </Container>
             <Container>
-                <Row>
-                    <Col>
-                        <FontAwesomeIcon icon={faUser} style={{float: 'left', position: 'absolute', right: '30px', top: '11px', color: '#000000aa'}}/>
-                        <Input type="text" placeholder="שם משתמש" value={username} onChange={handlerChangedUsername}/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <FontAwesomeIcon icon={faLock} style={{float: 'left', position: 'absolute', right: '30px', top: '11px', color: '#000000aa'}}/>
-                        <Input type="password" placeholder="סיסמא" value={password} onChange={handlerChangedPassword}/>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Button color="primary" id="login-button" onClick={() => alertMessages()}>התחבר</Button>
-                    </Col>
-                </Row>
+                <Form onSubmit={(e) => e.preventDefault()}>
+                    <Row>
+                        <Col>
+                            <FontAwesomeIcon icon={faUser} style={{float: 'left', position: 'absolute', right: '30px', top: '11px', color: '#000000aa'}}/>
+                            <Input type="text" placeholder="שם משתמש" value={username} onChange={handlerChangedUsername}/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <FontAwesomeIcon icon={faLock} style={{float: 'left', position: 'absolute', right: '30px', top: '11px', color: '#000000aa'}}/>
+                            <Input type="password" placeholder="סיסמא" value={password} onChange={handlerChangedPassword}/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Button type="submit" color="primary" id="login-button" onClick={() => alertMessages()}>התחבר</Button>
+                        </Col>
+                    </Row>
+                </Form>
             </Container>
             <p>{"Powered by Team Meow © 2019 "}<img src={CatIcon} width="26px"/></p>
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
+        </div>
         </div>
     )
 }

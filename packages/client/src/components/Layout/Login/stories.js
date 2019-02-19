@@ -3,4 +3,4 @@ import { storiesOf } from '@storybook/react';
 
 import LoginPage from './Login';
 
-storiesOf("Layout", module).add("login page", () => <LoginPage />);
+storiesOf("Layout", module).add("Login Page", () => <LoginPage />);
